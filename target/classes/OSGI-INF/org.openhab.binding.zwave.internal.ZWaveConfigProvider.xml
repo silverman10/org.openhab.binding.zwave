@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="org.openhab.binding.zwave.internal.ZWaveConfigProvider" immediate="true">
+  <service>
+    <provide interface="org.eclipse.smarthome.config.core.ConfigDescriptionProvider"/>
+    <provide interface="org.eclipse.smarthome.config.core.ConfigOptionProvider"/>
+  </service>
+  <reference name="ConfigDescriptionRegistry" interface="org.eclipse.smarthome.config.core.ConfigDescriptionRegistry" bind="setConfigDescriptionRegistry" unbind="unsetConfigDescriptionRegistry"/>
+  <reference name="ThingRegistry" interface="org.eclipse.smarthome.core.thing.ThingRegistry" bind="setThingRegistry" unbind="unsetThingRegistry"/>
+  <reference name="ThingTypeRegistry" interface="org.eclipse.smarthome.core.thing.type.ThingTypeRegistry" bind="setThingTypeRegistry" unbind="unsetThingTypeRegistry"/>
+  <implementation class="org.openhab.binding.zwave.internal.ZWaveConfigProvider"/>
+</scr:component>

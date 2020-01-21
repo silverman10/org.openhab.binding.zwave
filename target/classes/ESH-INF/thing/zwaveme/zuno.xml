@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="zwave"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+  xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0
+                      http://eclipse.org/smarthome/schemas/thing-description/v1.0.0">
+
+  <thing-type id="zwaveme_zunoswitch_02_011" listed="false">
+    <label>Z-Uno Temperature Sensor</label>
+    <description>
+		<![CDATA[
+		<h2>Z-Uno</h2>
+		]]>
+	</description>
+    <category>TemperatureSensor</category>
+
+    <!-- CHANNEL DEFINITIONS -->
+    <channels>
+      <channel id="sensor_temperature1" typeId="sensor_temperature">
+        <label>Sensor (temperature) 1</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:1;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature2" typeId="sensor_temperature">
+        <label>Sensor (temperature) 2</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:2;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature3" typeId="sensor_temperature">
+        <label>Sensor (temperature) 3</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:3;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature4" typeId="sensor_temperature">
+        <label>Sensor (temperature) 4</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:4;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature5" typeId="sensor_temperature">
+        <label>Sensor (temperature) 5</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:5;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature6" typeId="sensor_temperature">
+        <label>Sensor (temperature) 6</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:6;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature7" typeId="sensor_temperature">
+        <label>Sensor (temperature) 7</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:7;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature8" typeId="sensor_temperature">
+        <label>Sensor (temperature) 8</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:8;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature9" typeId="sensor_temperature">
+        <label>Sensor (temperature) 9</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:9;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_temperature10" typeId="sensor_temperature">
+        <label>Sensor (temperature) 10</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_SENSOR_MULTILEVEL:10;type=TEMPERATURE</property>
+        </properties>
+      </channel>
+      <channel id="sensor_battery" typeId="sensor_battery">
+        <label>Sensor (temperature) 10</label>
+        <properties>
+          <property name="binding:*:QuantityType">COMMAND_CLASS_BATTERY</property>
+        </properties>
+      </channel>
+    </channels>
+
+    <!-- DEVICE PROPERTY DEFINITIONS -->
+    <properties>
+      <property name="vendor">Z-Wave.Me</property>
+      <property name="modelId">Temp_Humi_Sensor</property>
+      <property name="manufacturerId">0115</property>
+      <property name="manufacturerRef">0111:10A0</property>
+      <property name="versionMin">0</property>
+      <property name="versionMax">10</property>
+      <property name="dbReference">9998</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:1">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:2">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:3">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:4">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:5">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:6">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:7">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:8">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:9">type=TEMPERATURE</property>
+      <property name="commandClass:COMMAND_CLASS_SENSOR_MULTILEVEL:10">type=TEMPERATURE</property>
+    </properties>
+
+    <!-- CONFIGURATION DESCRIPTIONS -->
+    <config-description>
+
+      <!-- STATIC DEFINITIONS -->
+      <parameter name="node_id" type="integer" min="1" max="232" readOnly="true" required="true">
+        <label>Node ID</label>
+        <advanced>true</advanced>
+      </parameter>
+
+    </config-description>
+
+  </thing-type>
+
+</thing:thing-descriptions>
